@@ -1,150 +1,185 @@
-.body-class {
-    background-color: #f4f4f4;
-    font-family: Georgia, serif;
-    font-size: 20px;
-    color: #333333;
+/* Global Styles */
+body {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #d9534f;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.header-class {
-    background-color: #0066ff;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
-
-.title-class {
-    font-size: 32px;
-}
-
-.nav-class {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-}
-
-.nav-class a {
-    color: #ffffff;
+nav {
+    background-color: #191970;
+    color: #fff;
     padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
     text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
 }
 
-.nav-class a:hover {
-    background-color: #333333;
+nav a:hover {
+    background-color: #333;
 }
 
-.nav-class a.active {
-    font-weight: bold;
-}
-
-.hero-section-class, .origin-section-class, .testimonial-section-class, .faq-section-class, .newsletter-section-class, .contact-section-class {
-    padding: 20px;
-}
-
-.section-title-class {
-    color: #0066ff;
-    font-size: 28px;
+h1, h2 {
+    text-align: center;
+    color: #191970;
     margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    padding: 0 20px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
-.text-class {
-    color: #333333;
-    line-height: 1.5;
-    font-size: 16px;
+footer {
+    background-color: #ddd;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
 }
 
-.image-class {
-    border: 5px solid #0066ff;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+
+body.home-page {
+
 }
 
-.blockquote-class {
-    font-style: italic;
-    color: #555555;
+.home-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.cite-class {
-    color: #006699;
+.home-page p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fffafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.faq-class {
+
+body.charity-list-page {
+}
+
+.charity-list-page h1 {
+    font-size: 2.2em;
     margin-bottom: 15px;
 }
 
-.faq-question-class {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.form-class {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+.charity-list-page ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fffafa;
     padding: 20px;
-    background-color: #f9f9f9;
     border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.form-class input[type="text"], .form-class input[type="email"], .form-class input[type="password"], .form-class textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+.charity-list-page li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
-.form-class input[type="submit"], .button-class {
-    background-color: #0044cc;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    cursor: pointer;
+.charity-list-page li:last-child {
+    border-bottom: none;
 }
 
-.form-class input[type="submit"]:hover, .button-class:hover {
-    background-color: #003399;
+.charity-list-page li a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-.footer-class {
-    background-color: #bbbbbb;
-    color: #ffffff;
+.charity-list-page li a:hover {
+    text-decoration: underline;
+}
+
+
+body.charity-profile-page {
+}
+
+.charity-profile-page h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.charity-profile-page h2 {
+    font-size: 1.6em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #07695e;
+}
+
+.charity-profile-page p {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fffafa;
     padding: 20px;
-    text-align: center;
-    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-@media screen and (max-width: 768px) {
-    .body-class {
-        font-size: 14px;
-    }
-
-    .header-class {
-        font-size: 20px;
-    }
-
-    .nav-class {
-        padding: 15px;
-    }
-
-    .nav-class a {
-        padding: 8px 15px;
-    }
-
-    .form-class {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .footer-class {
-        font-size: 12px;
-    }
+.charity-profile-page button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.charity-profile-page button:hover {
+    background-color: #000
+}
+
+#email-input {
+    width: 200px;
+    max-width: 100%;
+    padding: 0.5em;
+    font-size: 1rem;
+    box-sizing: border-box;
+    align-self: center;
+  }
+  .weather-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+  }
+  
+  #city-input,
+  #get-weather-btn {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
